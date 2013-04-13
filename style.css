@@ -1,0 +1,29 @@
+body, html {
+  margin:0;
+	padding:0;
+	font-family:'Verdana';
+	background-color: #111 !important;
+}
+table, tr, td {
+	color:#fff;
+	font-weight:800;
+	font-size:9pt;
+}
+thead {
+	text-align:left;
+}
+.row td{
+	font-weight:100;
+	color:#999 !important;
+	border-bottom:1px solid #3c3c3c;
+}
+.row:hover td{
+	color:#fff !important;
+}
+.status {
+	width:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	height:auto;
+}
