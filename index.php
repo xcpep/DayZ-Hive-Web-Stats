@@ -16,7 +16,10 @@ $core = new Core();
 </head>
 <body>
 <?php
-$core->server_status();
+if($perms['server_status'] == true)
+{
+	$core->server_status();
+}
 $core->player_stats();
 ?>
 </body>
