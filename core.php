@@ -85,7 +85,7 @@ class Core {
 			echo('	<td>'.$r['last_updated'].'</td>');
 			if($this->perms['player_signature'] === true)
 			{
-				echo('	<td><a href="userbar.php?id='.$r['unique_id'].'">Click ME</a></td>');
+				echo('	<td><a style="color:#aa0000;" href="userbar.php?id='.$r['unique_id'].'">Click ME</a></td>');
 			}
 			echo('</tr>');
 		}
