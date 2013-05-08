@@ -1,4 +1,5 @@
 <?php
+include('config.php');
 include('core.php');
 $core = new Core();
 ?>
@@ -16,7 +17,7 @@ $core = new Core();
 </head>
 <body>
 <?php
-if($perms['server_status'] == true)
+if($perms['server_status'] === true)
 {
 	$core->server_status();
 }
