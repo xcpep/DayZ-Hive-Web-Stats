@@ -66,6 +66,10 @@ class Core {
 		echo('	<th>Headshots</th>');
 		echo('	<th>Survival Time</th>');
 		echo('	<th>Last Updated</th>');
+		if($perms['player_signature'] == true)
+		{
+			echo('	<th>Signature/Userbar</th>');
+		}
 		echo('</tr></thead><tbody>');
 		while($r = mysqli_fetch_array($select, MYSQLI_ASSOC))
 		{ 
@@ -79,6 +83,10 @@ class Core {
 			echo('	<td>'.$r['headshots'].'</td>');
 			echo('	<td>'.$this->time_format($r['survival_time']).'</td>');
 			echo('	<td>'.$r['last_updated'].'</td>');
+			if($perms['player_signature'] == true)
+			{
+				echo('	<td><a href="userbar.php?id='.$r['unique_id'].'">Click ME</a></td>');
+			}
 			echo('</tr>');
 		}
 		echo('</tbody></table>');
